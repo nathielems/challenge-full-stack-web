@@ -1,9 +1,10 @@
 - Decisão da arquitetura utilizada
 Decidi por fazer duas pastas para separar front e back e mantê-los em um mesmo repositório - por mais que não seja o usual. Para o back, utilizei uma estrutura simples dividindo a api em controllers, services e routes.
+Comecei a utilizar o sequelize para gerar as tabelas, mas, devido ao tempo, opteu por retroceder e utilizar um script manual para gerar a tabela do banco de dados.
 A documentação foi gerada em swagger.
 
 Para o front
-segui a extrutura sugerida pelo nuxt e dividi as pages entre script e o arquivo .vue. Os testes foram feitos em jest
+segui a estrutura sugerida pelo nuxt e dividi as pages entre script e o arquivo .vue. Os testes foram feitos em jest
 
 - Lista de bibliotecas de terceiros utilizadas
 para o backend
@@ -30,7 +31,7 @@ para o frontend
     "vue-jest": "^3.0.4"
 
 - O que você melhoraria se tivesse mais tempo
-Faria a parte de authorization, com login e senha e níveis de usuários. Também refinaria o código, organizando melhor e incrementaria algumas funções, como a modal de sucesso no cadastro, delete e update, e também o campo de pesquina na tela de lista dos estudantes.
+Faria a parte de authorization, com login e senha e níveis de usuários. Também refinaria o código, organizando melhor e incrementaria algumas funções no front, como a modal de sucesso no cadastro, delete e update, e também o campo de pesquina na tela de lista dos estudantes.
 
 - Quais requisitos obrigatórios que não foram entregues
 Acredito que fiz todos, inclusive os desejáveis.
