@@ -1,7 +1,7 @@
 const students = require('./Students');
 
-const init = (expressionInstance, basePath) => {
-    students.init(expressionInstance, basePath)
+const init = (expressInstance, basePath) => {
+    students.init(expressInstance, basePath)
 }
 
 module.exports = {

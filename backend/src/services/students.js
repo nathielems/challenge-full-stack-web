@@ -13,7 +13,7 @@ const findById = async(id) => {
     const query = `
         SELECT *
         FROM "Students"
-        WHERE id = $1
+        WHERE id = ${id}
     `;
 
     return await database.queryFirstOrNull(query);
@@ -25,8 +25,8 @@ const create = async(data) => {
             name,
             email,
             tax,
-            createdAt,
-            updatedAt
+            "createdAt",
+            "updatedAt"
         )
         VALUES ($1, $2, $3, $4, $5)
         RETURNING *
@@ -44,7 +44,7 @@ const update = async (data) => {
             name = $1,
             email = $2,
             tax = $3,
-            updateAt = $4
+            "updatedAt" = $4
         WHERE id = $5
         RETURNING *
     `;
@@ -56,7 +56,7 @@ const update = async (data) => {
 
 const remove = async (id) => {
     const query = `
-        DELETE FROM "Students"]
+        DELETE FROM "Students"
         WHERE id = $1
     `;
 
