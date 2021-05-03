@@ -16,20 +16,6 @@
           vertical
         ></v-divider>
         <v-spacer></v-spacer>
-        <v-autocomplete
-          dense
-          v-model="select"
-          :loading="loading"
-          :items="students"
-          :search-input.sync="search"
-          cache-items
-          class="mx-3"
-          flat
-          hide-no-data
-          hide-details
-          label="Pesquisar"
-          solo-inverted
-        ></v-autocomplete>
         <v-dialog
           v-model="dialog"
           max-width="500px"

@@ -1,4 +1,4 @@
-import studentsApi from '@/services/students'
+import studentsApi from '../../services/students'
 
 export default {
   async actionFetchStudents() {
