@@ -77,7 +77,7 @@ const remove = async (req, res) => {
     try {
         await service.students.remove(id);
 
-        return res.status(204);
+        return res.status(204).send({});
     }
     catch(err)
     {
